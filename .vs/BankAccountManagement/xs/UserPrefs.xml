@@ -1,27 +1,18 @@
 ﻿<Properties StartupConfiguration="{D6274F19-E26C-43ED-AFAE-81D36C5D062C}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="BankAccountManagement/Services/IBankService.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="BankAccountManagement/Services/BankService.cs">
     <Files>
-      <File FileName="BankAccountManagement/Program.cs" Line="8" Column="4" NotebookId="1" />
-      <File FileName="BankAccountManagement/Bank.cs" Line="9" Column="13" NotebookId="1" />
-      <File FileName="BankAccountManagement/User.cs" Line="66" Column="14" NotebookId="1" />
-      <File FileName="BankAccountManagement/Services/UserService.cs" Line="1" Column="1" NotebookId="1" />
-      <File FileName="BankAccountManagement/Services/MneuService.cs" Line="4" Column="26" NotebookId="1" />
+      <File FileName="BankAccountManagement/Program.cs" />
+      <File FileName="BankAccountManagement/Services/UserService.cs" Line="1" Column="1" />
+      <File FileName="BankAccountManagement/Services/IBankService.cs" Line="1" Column="1" />
+      <File FileName="BankAccountManagement/Services/BankService.cs" Line="9" Column="24" />
     </Files>
-    <FloatingWindows>
-      <FloatingWindow WindowId="1" X="322" Y="234" Width="922" Height="641">
-        <Files>
-          <File FileName="BankAccountManagement/Services/BankService.cs" Line="1" Column="1" />
-          <File FileName="BankAccountManagement/Services/IBankService.cs" Line="1" Column="1" />
-        </Files>
-      </FloatingWindow>
-    </FloatingWindows>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="BankAccountManagement" expanded="True">
-            <Node name="BankAccountManagement">
-              <Node name="Services">
-                <Node name="IBankService.cs" selected="True" />
+            <Node name="BankAccountManagement" expanded="True">
+              <Node name="Services" expanded="True">
+                <Node name="BankService.cs" selected="True" />
               </Node>
             </Node>
           </Node>
