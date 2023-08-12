@@ -3,7 +3,7 @@ namespace BankAccountManagement
 {
 	internal class User
 	{
-		public int Id;
+        static int Id;
 		string _name;
 		public string Name
 		{
@@ -13,7 +13,7 @@ namespace BankAccountManagement
 			}
 			set
 			{
-				if (value.Length>2)
+				if (CheckName(value))
 				{
 					_name = value;
 				}
@@ -28,13 +28,13 @@ namespace BankAccountManagement
             }
             set
             {
-                if (value.Length > 2)
+                if (CheckSurName(value))
                 {
                     _surName = value;
                 }
             }
         }
-        public double Balance;
+    
 		string _email;
 		public string Email
         {
@@ -44,12 +44,13 @@ namespace BankAccountManagement
             }
             set
             {
-                if (value.Contains('@'))
+                if (CheckEmail(value))
                 {
                     _email = value;
                 }
             }
         }
+        public double Balance = 0;
         string _password;
         public string Password
         {
@@ -68,15 +69,61 @@ namespace BankAccountManagement
         public bool IsAdmin;
 		public bool IsBlocked;
 		public bool IsLogged;
+        static User()
+        {
+            Id = 0;
+            Id++;
+          
+        }
 
-		//public User(string name,string surname,string email,string password)
-		//{
-  //          Name = name;
-  //          SurName = surname;
-  //          Email = email;
-  //          Password = password;
-		//}
-		public bool CheckPassword(string pw)
+        public User( string name, string surname, string email, string password, bool isAdmin = false, bool isBlocked = false ,bool isLogged=false)
+        {
+            Name = name;
+            SurName = surname;
+            Email = email;
+            Password = password;
+            IsAdmin = isAdmin;
+            
+        }
+        public bool CheckName(string name)
+        {
+            //Console.WriteLine("Please write name:");
+        name:
+            //string resultName = Console.ReadLine();
+            if (name.Length <= 2)
+            {
+                Console.WriteLine("Please write valid name");
+                goto name;
+            }
+            return true;
+        }
+        public bool CheckSurName(string SurName)
+        {
+            //Console.WriteLine("Please write surname:");
+        surName:
+            //string resultsurName = Console.ReadLine();
+            if (SurName.Length <= 2)
+            {
+                Console.WriteLine("Please write valid surname");
+                goto surName;
+            }
+            return true;
+        }
+       
+        public bool CheckEmail(string email)
+        {
+
+        //    Console.WriteLine("Email yazin:");
+        email:
+            //    string resultEmail = Console.ReadLine();
+            if (!email.Contains('@'))
+            {
+                Console.WriteLine("Please write valid email");
+                goto email;
+            }
+            return true;
+        }
+        public bool CheckPassword(string pw)
 		{
 			bool result = default;
 			if (pw.Length>7)
@@ -102,7 +149,11 @@ namespace BankAccountManagement
             return result;
         }
 
-		
-	}
+        public override string ToString()
+        {
+            return $"UserName: {Name}, UserSurname: {SurName},  UserEmail: {Email} , UserPassword: {Password}, UserIsAdmin :{IsAdmin}";
+        }
+
+    }
 }
 

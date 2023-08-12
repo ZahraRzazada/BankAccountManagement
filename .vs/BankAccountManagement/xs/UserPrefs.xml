@@ -1,16 +1,26 @@
 ﻿<Properties StartupConfiguration="{D6274F19-E26C-43ED-AFAE-81D36C5D062C}|Default">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.BankAccountManagement PreferredExecutionTarget="MonoDevelop.Default" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.Workbench ActiveDocument="BankAccountManagement/Services/BankService.cs">
     <Files>
       <File FileName="BankAccountManagement/Program.cs" />
-      <File FileName="BankAccountManagement/Services/UserService.cs" Line="1" Column="1" />
-      <File FileName="BankAccountManagement/Services/IBankService.cs" Line="1" Column="1" />
-      <File FileName="BankAccountManagement/Services/BankService.cs" Line="9" Column="24" />
+      <File FileName="BankAccountManagement/Services/IBankService.cs" />
+      <File FileName="BankAccountManagement/Services/BankService.cs" Line="97" Column="32" />
+      <File FileName="BankAccountManagement/Entities/User.cs" />
+      <File FileName="BankAccountManagement/Entities/Bank.cs" />
+      <File FileName="BankAccountManagement/Services/MenuService1.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="BankAccountManagement" expanded="True">
             <Node name="BankAccountManagement" expanded="True">
+              <Node name="Entities" expanded="True" />
               <Node name="Services" expanded="True">
                 <Node name="BankService.cs" selected="True" />
               </Node>
@@ -20,11 +30,4 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.BankAccountManagement PreferredExecutionTarget="MonoDevelop.Default" />
-  <MultiItemStartupConfigurations />
 </Properties>
