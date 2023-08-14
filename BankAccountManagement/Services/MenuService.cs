@@ -14,6 +14,7 @@ namespace BankAccountManagement.Services
             Console.WriteLine("Zehmet olmasa adinizi daxil edin:");
         name:
                
+
                 string name = Console.ReadLine();
                 if (name.Length <= 2)
                 {
@@ -75,7 +76,7 @@ namespace BankAccountManagement.Services
             Console.WriteLine("Admin olub olmadiginizi daxil edin(true or false):");
             bool isAdmin = Boolean.TryParse(Console.ReadLine(), out isAdmin);
 
-            _bankService.UserRegistration(name, surName, password, email, isAdmin);
+            _bankService.UserRegistration(name, surName,  email, password, isAdmin);
         }
         public static void UserLogin()
         {

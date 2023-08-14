@@ -17,9 +17,9 @@ namespace BankAccountManagement.Services
 		{
 			_users = new User[0];
 		}
-		public void UserRegistration( string name, string surname, string password,string email, bool isAdmin)
+		public void UserRegistration( string name, string surname, string email, string password, bool isAdmin)
 		{
-			User user = new User( name, surname, password, email, isAdmin );
+			User user = new User( name, surname,  email, password, isAdmin );
 			if (FindUser(email) == null)
 			{
 				Array.Resize(ref _users, _users.Length + 1);
@@ -31,30 +31,29 @@ namespace BankAccountManagement.Services
 				Console.WriteLine($"{email} emaili ile bir defe login olunub,basqa email daxil edin");
 			}
 		}
-		public void UserLogin(string email,string password)
+		public void UserLogin(string email, string password)
 		{
-
 			foreach (User user in _users)
 			{
 
 				if (email == user.Email && password == user.Password)
 				{
-
+					user.IsLogged = true;
 					Console.WriteLine("Siz ugurla giris etdiniz");
 					return;
 
 				}
-                Console.WriteLine("Daxil etdiyiniz email ve sifre ya yalnisdir,yada bir biri ile uyusmur");
-
-            }
+				Console.WriteLine("Daxil etdiyiniz email ve sifre ya yalnisdir,yada bir biri ile uyusmur");
 
 
 
+
+
+			}
 		}
 		public User FindUser(string email)
 		{
 			User existedUser = null;
-
 			foreach (User user in _users)
 			{
 				if (email== user.Email)

@@ -1,0 +1,15 @@
+/Users/zahrarzazada/Projects/BankAccountManagement/BankAccountManagement/bin/Release/net6.0/BankAccountManagement
+/Users/zahrarzazada/Projects/BankAccountManagement/BankAccountManagement/bin/Release/net6.0/BankAccountManagement.deps.json
+/Users/zahrarzazada/Projects/BankAccountManagement/BankAccountManagement/bin/Release/net6.0/BankAccountManagement.runtimeconfig.json
+/Users/zahrarzazada/Projects/BankAccountManagement/BankAccountManagement/bin/Release/net6.0/BankAccountManagement.dll
+/Users/zahrarzazada/Projects/BankAccountManagement/BankAccountManagement/bin/Release/net6.0/BankAccountManagement.pdb
+/Users/zahrarzazada/Projects/BankAccountManagement/BankAccountManagement/obj/Release/net6.0/BankAccountManagement.csproj.AssemblyReference.cache
+/Users/zahrarzazada/Projects/BankAccountManagement/BankAccountManagement/obj/Release/net6.0/BankAccountManagement.GeneratedMSBuildEditorConfig.editorconfig
+/Users/zahrarzazada/Projects/BankAccountManagement/BankAccountManagement/obj/Release/net6.0/BankAccountManagement.AssemblyInfoInputs.cache
+/Users/zahrarzazada/Projects/BankAccountManagement/BankAccountManagement/obj/Release/net6.0/BankAccountManagement.AssemblyInfo.cs
+/Users/zahrarzazada/Projects/BankAccountManagement/BankAccountManagement/obj/Release/net6.0/BankAccountManagement.csproj.CoreCompileInputs.cache
+/Users/zahrarzazada/Projects/BankAccountManagement/BankAccountManagement/obj/Release/net6.0/BankAccountManagement.dll
+/Users/zahrarzazada/Projects/BankAccountManagement/BankAccountManagement/obj/Release/net6.0/refint/BankAccountManagement.dll
+/Users/zahrarzazada/Projects/BankAccountManagement/BankAccountManagement/obj/Release/net6.0/BankAccountManagement.pdb
+/Users/zahrarzazada/Projects/BankAccountManagement/BankAccountManagement/obj/Release/net6.0/BankAccountManagement.genruntimeconfig.cache
+/Users/zahrarzazada/Projects/BankAccountManagement/BankAccountManagement/obj/Release/net6.0/ref/BankAccountManagement.dll

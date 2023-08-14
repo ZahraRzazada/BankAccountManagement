@@ -16,7 +16,7 @@ do
     Console.WriteLine("2.User Login");
     Console.WriteLine("3.Find User");
     Console.WriteLine("0.Exit");
-    bool result = byte.TryParse(Console.ReadLine(), out selection);
+bool result = byte.TryParse(Console.ReadLine(), out selection);
 
     if (result)
     {

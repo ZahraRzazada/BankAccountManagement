@@ -1,16 +1,13 @@
 ﻿<Properties StartupConfiguration="{D6274F19-E26C-43ED-AFAE-81D36C5D062C}|Default">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.ItemProperties.BankAccountManagement PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="BankAccountManagement/Services/MenuService.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="BankAccountManagement/Entities/User.cs">
     <Files>
-      <File FileName="BankAccountManagement/Services/IBankService.cs" Line="10" Column="46" />
-      <File FileName="BankAccountManagement/Services/BankService.cs" Line="137" Column="1" />
-      <File FileName="BankAccountManagement/Entities/Bank.cs" Line="1" Column="1" />
-      <File FileName="BankAccountManagement/Services/MenuService.cs" Line="143" Column="1" />
-      <File FileName="BankAccountManagement/Entities/User.cs" Line="143" Column="1" />
-      <File FileName="BankAccountManagement/Program.cs" Line="13" Column="1" />
+      <File FileName="BankAccountManagement/Services/IBankService.cs" />
+      <File FileName="BankAccountManagement/Services/BankService.cs" Line="21" Column="1" />
+      <File FileName="BankAccountManagement/Entities/Bank.cs" />
+      <File FileName="BankAccountManagement/Services/MenuService.cs" />
+      <File FileName="BankAccountManagement/Entities/User.cs" Line="68" Column="6" />
+      <File FileName="BankAccountManagement/Program.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -19,7 +16,7 @@
             <Node name="BankAccountManagement">
               <Node name="Entities" expanded="True" />
               <Node name="Services" expanded="True">
-                <Node name="MenuService.cs" selected="True" />
+                <Node name="BankService.cs" selected="True" />
               </Node>
             </Node>
           </Node>
@@ -31,6 +28,15 @@
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/zahrarzazada/Projects/BankAccountManagement/BankAccountManagement/Services/MenuService.cs" relfile="BankAccountManagement/Services/MenuService.cs" line="82" column="1" />
+      <Breakpoint file="/Users/zahrarzazada/Projects/BankAccountManagement/BankAccountManagement/Services/BankService.cs" relfile="BankAccountManagement/Services/BankService.cs" line="35" column="1" />
+      <Breakpoint file="/Users/zahrarzazada/Projects/BankAccountManagement/BankAccountManagement/Services/BankService.cs" relfile="BankAccountManagement/Services/BankService.cs" line="21" column="1" />
+      <Breakpoint file="/Users/zahrarzazada/Projects/BankAccountManagement/BankAccountManagement/Entities/User.cs" relfile="BankAccountManagement/Entities/User.cs" line="63" column="1" />
+      <Breakpoint file="/Users/zahrarzazada/Projects/BankAccountManagement/BankAccountManagement/Entities/User.cs" relfile="BankAccountManagement/Entities/User.cs" line="109" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
 </Properties>
