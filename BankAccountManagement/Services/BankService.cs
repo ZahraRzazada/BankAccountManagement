@@ -19,46 +19,45 @@ namespace BankAccountManagement.Services
 		}
 		public void UserRegistration( string name, string surname, string password,string email, bool isAdmin)
 		{
-			User user = new User( name, surname, password, email, isAdmin);
+			User user = new User( name, surname, password, email, isAdmin );
 			if (FindUser(email) == null)
 			{
 				Array.Resize(ref _users, _users.Length + 1);
 				_users[_users.Length - 1] = user;
-				Console.WriteLine($"{user.Name} user has successfully added");
+				Console.WriteLine($"{user.Name} adli user ugurla elave olundu");
 			}
 			else
 			{
 				Console.WriteLine($"{email} emaili ile bir defe login olunub,basqa email daxil edin");
 			}
 		}
-		public void UserLogin(string email, string password)
+		public void UserLogin(string email,string password)
 		{
-			
-			//for eack pasword email bir bir beraberlesdir ikisinide
-			
+
 			foreach (User user in _users)
 			{
-				if (user.IsBlocked)
-				{
-					Console.WriteLine("Siz blok olunmusunuz, giris eliye bilmezsiniz");
-				}
+
 				if (email == user.Email && password == user.Password)
 				{
-					
-					Console.WriteLine("Siz ugurla giris etdiniz");
-				}
-				Console.WriteLine("Daxil etdiyiniz email ve sifre ya yalnisdir,yada bir biri ile uyusmur");
-			}
-           
 
-        }
-		public User FindUser(string searchingEmail)
+					Console.WriteLine("Siz ugurla giris etdiniz");
+					return;
+
+				}
+                Console.WriteLine("Daxil etdiyiniz email ve sifre ya yalnisdir,yada bir biri ile uyusmur");
+
+            }
+
+
+
+		}
+		public User FindUser(string email)
 		{
 			User existedUser = null;
 
 			foreach (User user in _users)
 			{
-				if (searchingEmail== user.Email)
+				if (email== user.Email)
 				{
 					existedUser = user;
 				}
@@ -66,12 +65,12 @@ namespace BankAccountManagement.Services
 			return existedUser;
 
 		}
-		public void FindUserbyEmail(string searcingemail)
+		public void FindUserbyEmail(string email)
 		{
 			User existedUser = null;
 			foreach (User user in _users)
 			{
-				if (user.Email == searcingemail)
+				if (user.Email == email)
 				{
 					Console.WriteLine(user);
 				}
@@ -80,19 +79,20 @@ namespace BankAccountManagement.Services
 		}
 		public void CheckBalance(string email)
 		{
-			//
+
 			User user = FindUser(email);
 			Console.WriteLine(user.Balance);
 		}
 		public void TopUpBalance( string email,double additionBalance)
 		{
 			User user = FindUser(email);
+
 			user.Balance += additionBalance;
 		}
 		public void ChangePassword(string email,string oldPassword,string newPassword)
 
 		{
-			//
+
 			User user = FindUser(email);
 			if (oldPassword!=user.Password)
 			{
@@ -100,7 +100,7 @@ namespace BankAccountManagement.Services
 			}
 			else
 			{
-				Console.WriteLine($"{user.Password} is succesfully changed to {newPassword}");
+				Console.WriteLine($"{user.Password} ugurla {newPassword} parolu ile deyisdirildi");
 				user.Password = newPassword;
 			}
 		}
@@ -109,25 +109,29 @@ namespace BankAccountManagement.Services
 			
 				foreach (User user in _users)
 				{
-				Console.WriteLine($"User name : { user.Name}  User surname:{user.SurName}");
+				
+					Console.WriteLine($"User name : {user.Name}  User surname:{user.SurName}");
+				
+			
 				}
 			
 		}
-		public void BlockUser(string searchingEmail)
+		public void BlockUser(string email)
 		{
-            Console.WriteLine("Bloklamaq istediyiniz emaili qeyd edin:");
-            User user = FindUser(searchingEmail);
-			if (user is null)
-			{
-				Console.WriteLine($"{searchingEmail} email cannot be found");
-			}
-			else
-			{
-				//admin admini blok eliye bilmez
-				//elcan admini zehrani blok eledi,tezden zehrani blok eliye bilmez
-				Console.WriteLine($"{searchingEmail} is succesfully blocked");
-			}
+           
+            User user = FindUser(email);
+                if (user is null)
+                {
+                    Console.WriteLine($"{email} email tapilmadi");
+                }
+
+                else
+                {
+                    Console.WriteLine($"{email} ugurla blok olundu");
+                }
 			
-		}
+            }
+            
+        }
 	}
-}
+
